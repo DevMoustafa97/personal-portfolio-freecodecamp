@@ -1,228 +1,256 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Righteous|Roboto+Slab&display=swap');
+
+    
+
 *{
     padding: 0;
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
 }
-/* colors 
-    #b7d39e
-    #c2d9cc
-
-*/
-body{
-    font-family: 'Montserrat', sans-serif;
-    background-color: #c2d9cc;
-   
+img{
+    width:150px;
 }
-p{
-    padding: 10%;
-    font-weight: 800;
-    color: #26241a;
+body{
+    
+    font-family:'Righteous', cursive;
+    font-family:'Montserrat';
+    width: 100vw;
     
 }
-ul{
-  padding-left: 15%;
-}
-li{
-    padding: 5%;
-    font-weight: 800;
-    color: #26241a;
-}
-a:hover{
-    background-color: #26241a;
-    color: aliceblue;
-}
-header{
-    font-size: 1.7em;
-    font-weight: bolder;
-    padding-left: 5%;
-}
-code{
-    display: block;
-    background-color: #26241a;
-    color: #c2d9cc;
-    font-family: monospace;
-    width:80%;
-    margin:0 auto;
-    padding:5%;
-    border-radius: 10px;
-    font-size: 1.3em;
+.html, .css,.js{
+  margin-bottom: 15px;
 }
 #navbar{
-flex-grow: 1;
-position: fixed;
-width: 20%;
-}
-#main-doc{
-    flex-grow: 4;
-    padding-top: 20vh;
-    padding-left:20% ;
-}
-#navbar > header {
+    background-color: dodgerblue;
     display: block;
-    margin:5vh 3vh ;
-    padding: 0px ;
-    /* padding-left: 20%; */
+    position: fixed;
+    width: 100vw;
     text-align: center;
+    font-size: 1.3rem;
+    opacity: 0.8;
+   
 }
+#navbar > ul{
+    list-style:none;
+    margin: 0% 10%;
+}
+#navbar > ul >li{
+    display: inline-block;
+    padding: 0.7em 0.1em;
+}
+#navbar > ul >li >a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+#welcome-section{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(https://i.ibb.co/nCJCS24/hero.jpg);
+    background-size: cover;
+    background-position-x: 65%;
 
-#navbar ul{
-    list-style: none;
-    padding: 20% auto;
-    background-color: #b7d39e;
-    margin-bottom: 15%;
-    height: 80vh;
-    overflow:scroll;
-    overflow-x: hidden;
-    cursor: pointer;
+}
+#hero-words{
+    position: relative;
+    color:white;
+    top:25%;
+    padding-left: 5%;
+    font-size:1.7rem;
+}
+ #hero-words > a:nth-child(5){
+     position: absolute;
+     transform: rotate(15deg);
+     font-size: larger;
+ }
+
+#hero-words>a{
+    color:dodgerblue;
+}
+#hero-words>h1{
+    color:dodgerblue;
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-bottom: 15%;
+}
+#skills{
+    padding-top: 15%;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(https://i.ibb.co/nCJCS24/hero.jpg);
+    background-size: cover;
+    background-position-x: 30%;
+    color: dodgerblue;
+    font-weight: 900;
+}
+#skills > h3{
+    display: inline-block;
+    font-size: 2.6rem;
+    color: dodgerblue;
+}
+#skills img{
+    display: block;
+    margin: 0 auto;
     
 }
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-    border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
-ul a{
-    text-decoration: none;
-    font-size: 1.3em;
-    color: #26241a;
 
+#skills p{
+    position: relative;
+    bottom:15%;
 }
 
-#Reference > ul > li > a{
-    text-decoration: underline;
-    cursor: pointer;
+#projects{
+    text-align: center;
+    }
+#projects h3{
+    font-size: 2rem;
+    padding:5%;
+    color: black;
 }
-#Reference > ul > li > a:hover{
-    background-color: #b7d39e;
+#projects div{
+    margin-bottom: 5%;
 }
-#Reference > ul > li:hover{
-    background-color: #c2d9cc;
-    cursor: default;
+#projects p a{
+    font-size: 2rem;
+    font-weight: bold;
+    color:dodgerblue;
 }
-@media (max-width:430px){
+#contact{
+    text-align: center;
+    margin-top: 15%;
+
+}
+#contact p{
+    font-size: 2rem;
+}
+#contact > p:nth-child(4){
+    font-size:1.5rem;
+    font-weight: bold;
+
+}
+@media(max-width:430px){
     *{
         padding: 0;
-        margin:0;
+        margin: 0;
         box-sizing: border-box;
     }
-    /* colors 
-        #b7d39e
-        #c2d9cc
-    
-    */
+    img{
+        width:150px;
+    }
     body{
-        display:unset;
-        font-family: 'Montserrat', sans-serif;
-        background-color: #c2d9cc;
-    }
-    p{
-        padding: 10%;
-        font-weight: 800;
-        color: #26241a;
-    }
-    ul{
-      padding-left: 15%;
-    }
-    li{
-        padding: 5%;
-        font-weight: 800;
-        color: #26241a;
-    }
-    header{
-        display: block;
-        font-size: 1.7em;
-        font-weight: bolder;
-        padding-left: 5%;
-        width: 100%;
+        
+        font-family:'Righteous', cursive;
+        font-family:'Montserrat';
+        width: 100vw;
+        
     }
     #navbar{
+        background-color: dodgerblue;
         display: block;
-       position: relative;
-        width: 100%;
+        position: fixed;
+        width: 100vw;
+        text-align: center;
+        font-size: 1.3rem;
+        opacity: 0.8;
+       
     }
-    #main-doc{
-        padding-top: 0;
+    #navbar > ul{
+        list-style:none;
+        margin: 0% 10%;
     }
-    code{
+    #navbar > ul >li{
+        display: inline-block;
+        padding: 0.7em 0.1em;
+    }
+    #navbar > ul >li >a{
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+    #welcome-section{
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(hero.jpg);
+        background-size: cover;
+        background-position-x: 65%;
+    
+    }
+    #hero-words{
+        position: relative;
+        color:white;
+        top:25%;
+        padding-left: 5%;
+        font-size:1.7rem;
+    }
+     #hero-words > a:nth-child(5){
+         position: absolute;
+         transform: rotate(15deg);
+         font-size: larger;
+     }
+    
+    #hero-words>a{
+        color:dodgerblue;
+    }
+    #hero-words>h1{
+        color:dodgerblue;
+        font-size: 2rem;
+        font-weight: bolder;
+        padding-bottom: 15%;
+    }
+    #skills{
+        padding-top: 15%;
+        text-align: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(hero.jpg);
+        background-size: cover;
+        background-position-x: 30%;
+        color: dodgerblue;
+        font-weight: 900;
+    }
+    #skills > h3{
+        display: inline-block;
+        font-size: 2.6rem;
+        color: dodgerblue;
+    }
+    #skills img{
         display: block;
-        background-color: #26241a;
-        color: #c2d9cc;
-        font-family: monospace;
-        width:80%;
-        margin:0 auto;
-        padding:5%;
-        border-radius: 10px;
-        font-size: 1.3em;
-        margin-bottom: 5%;
+        margin: 0 auto;
+        
     }
-    #navbar > header {
-        display: block;
-        margin:5vh 3vh ;
-        padding: 0px ;
-        /* padding-left: 20%; */
+    
+    #skills p{
+        position: relative;
+        bottom:15%;
+    }
+    
+    #projects{
         text-align: center;
     }
-    
-    #navbar ul{
-        list-style: none;
-        padding: 20% auto;
-        background-color: #b7d39e;
-        margin-bottom: 15%;
-        height: 40vh;
-        overflow:scroll;
-        overflow-x: hidden;
-        cursor: pointer;
+    #projects h3{
+        font-size: 2rem;
+        padding:5%;
+        color: black;
     }
-    ::-webkit-scrollbar {
-        width: 10px;
-      }
-      
-      /* Track */
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
-      }
-       
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-        background: #888; 
-        border-radius: 10px;
-      }
-      
-      /* Handle on hover */
-      ::-webkit-scrollbar-thumb:hover {
-        background: #555; 
-      }
-    ul a{
-        text-decoration: none;
-        font-size: 1.3em;
-        color: #26241a;
-    
+    #projects div{
+        
+        margin-bottom: 5%;
     }
-    
-    #Reference > ul > li > a{
-        text-decoration: underline;
-        cursor: pointer;
+    #projects p a{
+        font-size: 2rem;
+        font-weight: bold;
+        color:dodgerblue;
     }
-    #Reference > ul > li > a:hover{
-        background-color: #b7d39e;
+    #contact{
+        text-align: center;
+        margin-top: 15%;
+
     }
-    #Reference > ul > li:hover{
-        background-color: #c2d9cc;
-        cursor: default;
+    #contact p{
+        font-size: 2rem;
     }
+    #contact > p:nth-child(4){
+        font-size:1.5rem;
+        font-weight: bold;
+    }
+
 }
